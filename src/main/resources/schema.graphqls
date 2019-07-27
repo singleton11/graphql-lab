@@ -1,0 +1,13 @@
+type Query {
+    marketDataBySymbol(symbol: String): MarketData
+}
+
+type MarketData {
+    symbol: String,
+    exchange: String,
+    date: Date
+    currency: String
+    latestPrice: Float
+}
+
+scalar Date
